@@ -7,10 +7,10 @@ This is for 42cursus github config things.
 Enviroments:
     Github repos to play with:
 
-    - 42cursus -> 42cursus repo wher i will put all my super code.
+    - 42cursus -> 42cursus repo where I will commit all my super code.
                -> I will commit code from home and school.
 
-    - vogspere -> repo 42School from the project to evaluate in the school,  example Libft.
+    - vogspere -> repo from 42School from the project to evaluate, example Libft.
 
 
 
@@ -37,7 +37,7 @@ Enviroments:
             
 
 
-GitHub 42cusus repo:
+GitHub repo /42cusus:
 -- Config in my computer PC-X250 and Mac-42Heilbron:
 WARNING: Always commit/whatever in the folder 42cursus.
 - Origin/main  (No master, here is MAIN)
@@ -46,7 +46,7 @@ To push: #git push github main
 To pull: #git pull github main
 
 
-Vogsphere repo 42School: (evalutaions)
+Vogsphere repo /42cursus/Libft: (evalutaions)
 WARNING: Always in the folder 42cursus/Libft.
 
 - Origin/master
@@ -57,7 +57,6 @@ To pull: #git pull
 
 42cursus ---- create a new repository on the command line
 git init
-git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:MLeganes/42cursus.git
