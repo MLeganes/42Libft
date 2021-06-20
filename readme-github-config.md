@@ -2,10 +2,6 @@
                     GitHub Repo -- 42cursus
 *********************************************************
 
-INFO for configuration different repos:
-https://bytescout.com/blog/setup-and-use-git-repositories-for-one-project.html
-
-
 This is for 42cursus github config things.
 
 Enviroments:
@@ -56,3 +52,21 @@ WARNING: Always in the folder 42cursus/Libft.
 
 To push: #git push
 To pull: #git pull
+
+
+42cursus ---- create a new repository on the command line
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:MLeganes/42cursus.git
+git push -u origin main
+
+
+INFO configuration different repos:
+https://bytescout.com/blog/setup-and-use-git-repositories-for-one-project.html
+
+
+
+
+
