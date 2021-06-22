@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 11:36:03 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/22 11:36:06 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/22 12:53:04 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,26 +17,13 @@ void *ft_memset(void *s, int c, size_t n);
 
 void test_memset(){
 
-    char s[50] = "Hello schol";
+    char s[50] = "Hello schol42Heilbronn";
+    char ss[50] = "Hello schol42Heilbronn";
 
-    printf("Before ft_memset: %s", s);
-    ft_memset(s + 6, '*', 5 * sizeof(char));
-    printf("After ft_memset: %s", s);
-
-    // memset
-    char str[50] = "GeeksForGeeks is for programming geeks.";
-    printf("\nBefore memset(): %s\n", str);
-
-    int aux = sizeof(char);
-    int aux2 = sizeof(char)*8;
-    int aux3 = sizeof(int);
-    printf("\n [testing] sizeof(char): %d, *8: %d\n", aux, aux2);
-    printf("\n [testing] sizeof(int): %d \n", aux3);
+    ft_memset(s, '*', 5);
+    printf("[Test ft_memset] ft_memset: %s\n", s);
     
-
-    // Fill 8 characters starting from str[13] with '.'
-    memset(str + 13, '.', 8 * sizeof(char)); 
-
-    printf("After memset():  %s", str);
+    memset(ss, '.', 5);
+    printf("[Test ft_memset] memset: %s\n", ss);
 
 }
