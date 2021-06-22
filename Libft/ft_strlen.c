@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/22 11:35:09 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/22 19:25:52 by amorcill         ###   ########.fr       */
+/*   Created: 2021/06/22 14:12:32 by amorcill          #+#    #+#             */
+/*   Updated: 2021/06/22 19:25:27 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	test_memset(void);
-void	test_strlen(void);
-size_t	strnlen(const char *ch);
-
-int	main(void)
+size_t	ft_strnlen(const char *ch)
 {
-	printf("\nStart Main...\n");
-	test_memset();
-	test_strlen();
-	return (0);
+	int	count;
+
+	count = 0;
+	while (ch[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
 }
