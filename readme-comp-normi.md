@@ -1,4 +1,6 @@
 
 
 
-gcc -Wall -Werror -Wextra *.c -o FileNameOutput
+gcc -Wall -Werror -Wextra *.c -o FileNameOutputName
+
+norminette -R CheckForbiddenSourceHeader <FileNameToCheck>

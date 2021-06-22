@@ -1,5 +1,6 @@
 
 
-MAC Short cutsß
+MAC keyboard -- Short cuts
 
-Copy lines:             Shift + opt + arrow-down  
+Copy line:              Shift + opt + arrow-up/down  
+Move line:              Option + arrow-up/down
