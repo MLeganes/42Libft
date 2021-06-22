@@ -31,10 +31,13 @@ Enviroments:
          | Mac-42Heilbron  |            ------------------
          -------------------
 
-        Folder: 42cursus                Folder: Libft
+        Folder: (x250) /42cursus           Folder: Libft
           #git push github main             #git push
           #git pull github main             #git pull
-            
+        Folder: (Mac) /42cursus
+          #git push 
+          #git pull    
+  
 
 
 GitHub repo /42cusus:
