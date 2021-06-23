@@ -6,9 +6,11 @@
 #    By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 12:57:35 by amorcill          #+#    #+#              #
-#    Updated: 2021/06/23 15:28:05 by amorcill         ###   ########.fr        #
+#    Updated: 2021/06/23 15:40:59 by amorcill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+# IMPORTANT: Execute "$make all" in the same folder /Libft, in the other case, you get an error.
 
 NAME = libft.a
 
