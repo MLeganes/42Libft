@@ -6,12 +6,11 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 18:02:40 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/22 19:24:23 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/23 12:55:32 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strnlen(const char *ch);
 
