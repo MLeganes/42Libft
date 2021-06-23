@@ -6,21 +6,29 @@
 #    By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 12:57:35 by amorcill          #+#    #+#              #
-#    Updated: 2021/06/23 12:57:37 by amorcill         ###   ########.fr        #
+#    Updated: 2021/06/23 15:28:05 by amorcill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = aLibft.out
+NAME = libft.a
 
-SRC = main.c ft_memset.c test_memset.c
+# compile with the flags and include the header .h with -c
+CFLAG = -Wall -Werror -Wextra -c
 
-all: 
-	gcc -o $(NAME) $(SRC) 
+# SRC	= 	ft_memset.c test_memset.c \
+#		ft_strlen.c test_strlen.c \
+
+all: $(NAME)
+
+$(NAME):
+	gcc $(CFLAG) ft_*.c
+	ar -crs $(NAME) *.o
+	ar -t $(NAME)
 
 clean:
-	/*.out
+	rm -f *.o
 
 fclean: clean
-	/
+	rm -f $(NAME)
 
-recompil: fclean all
+re: fclean all
