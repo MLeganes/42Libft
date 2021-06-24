@@ -6,7 +6,7 @@
 /*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 23:19:48 by x250              #+#    #+#             */
-/*   Updated: 2021/06/24 16:05:42 by x250             ###   ########.fr       */
+/*   Updated: 2021/06/24 16:23:16 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-    size_t	len;
+	size_t	len;
 
 	len = 0;
-    while ( dst[len] &&  len < (size - 1) )
-    {
+	while (dst[len] && len < (size - 1))
+	{
 		dst[len] = src[len];
-        len++;
-    }
-    return (len);
+		len++;
+	}
+	return (len);
 }
