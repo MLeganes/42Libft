@@ -15,3 +15,11 @@ Run the bash War-machine
 libft-war-machine-master % ./grademe.sh
 
 
+-------------------------------------------------------------------------------------
+|                                    (3) RUN UNIT-TEST                              |
+-------------------------------------------------------------------------------------- 
+ 
+ Another option to test the project:
+https://github.com/alelievr/libft-unit-test
+
+
