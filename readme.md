@@ -22,4 +22,5 @@ libft-war-machine-master % ./grademe.sh
  Another option to test the project:
 https://github.com/alelievr/libft-unit-test
 
-
+make f
+make re
