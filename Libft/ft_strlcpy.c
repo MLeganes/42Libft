@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 23:19:48 by x250              #+#    #+#             */
-/*   Updated: 2021/06/24 23:02:05 by x250             ###   ########.fr       */
+/*   Updated: 2021/06/25 18:18:18 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,32 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	len;
+	unsigned int i;
+	unsigned int src_len;
 
-	len = 0;
-	while (len < (size - 1))
+	src_len = ft_strlen(src);
+	i = 0;
+	
+	if (size != 0)
 	{
-		dst[len] = src[len];
-		if (src[len] == '\0')
+		while ((i < size - 1) && *(src + i))
 		{
-			break;
+			*(dst + i) = *(src + i);
+			i++;
 		}
-		len++;
+		if (src[i] == '\0')	
+			return (i);	
+		
 	}
-	if (len <= size)
+	if (size ==0)
 	{
-		dst[len] = '\0';
+		
 	}
-	return (len);
+
+	
+	
+	*(dst + i) = '\0';
+	while( *dst)
+		dst++;
+	return (src_len);
 }
