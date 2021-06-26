@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 13:00:17 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/26 14:33:25 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ size_t  ft_strlcat(char *dst, const char *src, size_t size);
 size_t  ft_strlcpy(char *dst, const char *src, size_t size);
 int     ft_tolower(int c);
 int     ft_toupper(int c);
+int     ft_isprint(int c);
      
 #endif
