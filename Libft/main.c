@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 11:35:09 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/25 10:59:23 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/26 11:32:00 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ int	main(void)
 	// len = strlcpy(dst, "Hello school 42Heilbronn", 15);
 	// printf("[Test strlcpy] : %s   LEN: %zu \"", dst, len);
 
-	char src[50];
+	// char src[50];
 	
-	strcpy(src, "La ostia puta me tiene hasta los cojones esta");	
-	len = ft_strlcpy(dst, src, 5);
-	printf("\n[Test ft_strlcpy] 5 \nDestino: %s \nSource: %s \n", dst, src);
+	// strcpy(src, "La ostia puta me tiene hasta los cojones esta");	
+	// len = ft_strlcpy(dst, src, 5);
+	// printf("\n[Test ft_strlcpy] 5 \nDestino: %s \nSource: %s \n", dst, src);
 	return (0);
 } 
