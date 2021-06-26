@@ -6,19 +6,18 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/26 12:27:48 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 12:49:26 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/26 12:57:02 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libc.h"
 
-int ft_tolower(int c)
-{   
-    int ret; 
-    
-    ret = c;
-    if (c > 64 &&  c < 91 )
-        ret = c + 32;
-    
-    return (ret);       
+int	ft_tolower(int c)
+{
+	int	ret;
+
+	ret = c;
+	if (c > 64 && c < 91)
+		ret = c + 32;
+	return (ret);
 }
