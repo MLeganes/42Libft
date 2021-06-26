@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 13:00:17 by amorcill         ###   ########.fr       */
+/*   Created: 2021/06/26 13:00:42 by amorcill          #+#    #+#             */
+/*   Updated: 2021/06/26 13:12:45 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libc.h"
 
-# include <stdio.h>
-# include <string.h>
+int	ft_toupper(int c)
+{
+	unsigned int	ret;
 
-void	*ft_memset(void *s, int c, size_t n);
-size_t	ft_strlen(const char *ch);
-void    *ft_memcpy(void *dst, const void *src, size_t n);
-size_t  ft_strlcat(char *dst, const char *src, size_t size);
-size_t  ft_strlcpy(char *dst, const char *src, size_t size);
-int     ft_tolower(int c);
-int     ft_toupper(int c);
-     
-#endif
+	ret = c;
+	if (c > 96 && c < 123)
+		ret -= 32;
+	return (ret);
+}

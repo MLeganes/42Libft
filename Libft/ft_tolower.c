@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/26 12:27:48 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 12:57:02 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/26 13:05:21 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ int	ft_tolower(int c)
 
 	ret = c;
 	if (c > 64 && c < 91)
-		ret = c + 32;
+		ret += 32;
 	return (ret);
 }
