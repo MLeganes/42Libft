@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/28 12:33:21 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/28 15:33:20 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 
 int	ft_isalpha(int c);
