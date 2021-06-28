@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 16:24:50 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/28 10:16:21 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,14 @@
 #include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n);
-size_t	ft_strlen(const char *ch);
+
 void	*ft_memcpy(void *dst, const void *src, size_t n);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
+
+size_t	ft_strlen(const char *ch);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
+char	*ft_strchr(const char *s, int c);
+
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
