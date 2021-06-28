@@ -6,21 +6,21 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 10:16:27 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/28 12:31:04 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/28 12:36:11 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libc.h"
 
-char *ft_strchr(const char *s, int c)
-{	
+char	*ft_strchr(const char *s, int c)
+{
 	while (*s)
 	{
-		if( *s == c)
+		if (*s == c)
 			return ((char *)s);
-		s++;		
+		s++;
 	}
-	if ( *s == c)
-		return ((char *)s);	
+	if (*s == c)
+		return ((char *)s);
 	return (0);
 }
