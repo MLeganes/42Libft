@@ -6,11 +6,11 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/26 15:04:08 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 15:06:46 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/28 13:35:18 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

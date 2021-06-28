@@ -6,11 +6,11 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/26 13:00:42 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/26 13:12:45 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/28 13:36:10 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
