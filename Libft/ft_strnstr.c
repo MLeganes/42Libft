@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/28 15:34:56 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/29 17:55:59 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/06/29 18:17:30 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t		siz;
 	size_t		needlelen;
-	const char	*ret;
+	int			cmp;
+	//const char	*ret;
 	const char	*ptrhaystack;
 	const char	*ptrneedle;
 
@@ -27,21 +28,22 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (*ptrhaystack && siz < len)
 	{
 		if (*ptrhaystack == *needle)
-		{				
+		{		
+			///ret = ptrhaystack;
 			needlelen = ft_strlen(needle);
-			ret = ptrhaystack;
-			ptrneedle = needle;
-			while (*ptrhaystack == *ptrneedle && needlelen != 0 && siz < len)
-			{
-				ptrneedle++;
-				ptrhaystack++;
-				needlelen--;
-				siz++;
-			}
-			if (needlelen == 0 && siz <= len)
-				return ((char *)ret);
-			ptrhaystack = ret;
-			ptrneedle = needle;
+			cmp = ft_strncmp(ptrhaystack, ptrneedle, needlelen);		
+			// ptrneedle = needle;
+			// while (*ptrhaystack == *ptrneedle && needlelen != 0 && siz < len)
+			// {				
+			// 	ptrneedle++;
+			// 	ptrhaystack++;
+			// 	needlelen--;
+			// 	siz++;
+			// }
+			if (cmp == 0)
+				return ((char *)ptrhaystack);
+			//ptrhaystack = ret;
+			//ptrneedle = needle;
 		}
 		ptrhaystack++;
 		siz++;
