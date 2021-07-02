@@ -6,14 +6,11 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 23:19:48 by x250              #+#    #+#             */
-/*   Updated: 2021/07/02 14:45:59 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/02 14:48:30 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {	
