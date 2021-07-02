@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 23:19:48 by x250              #+#    #+#             */
-/*   Updated: 2021/06/26 12:21:29 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/02 14:45:59 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,25 @@
 #include <unistd.h>
 #include <string.h>
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	char *d;
-	const char *s;
-	size_t n;
-	
-	d = dst;
-	s = src;
-	n = size;
-	if (n != 0)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+{	
+	size_t	slen;
+	size_t	counter;
+
+	if (dst != NULL && src != NULL)
 	{
-		while (n != 0)
+		slen = ft_strlen(src);
+		if (size > 0)
 		{
-			*d++ = *s++;			
-			n--;
-			if (*s == '\0')
-				break ;
+			counter = 0;
+			while (counter < (size - 1) && src[counter] != '\0')
+			{
+				dst[counter] = src[counter];
+				counter++;
+			}
+			dst[counter] = '\0';
 		}
+		return (slen);
 	}
-	if (n == 0)
-	{
-		if (size != 0)
-			*d = '\0';
-		while (*s++)
-			;
-	}
-	return (ft_strlen(src));
+	return (0);
 }
