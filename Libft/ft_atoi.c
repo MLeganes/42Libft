@@ -6,12 +6,11 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 16:46:18 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/01 17:11:54 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/02 14:49:03 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_isspace(char c)
 {
