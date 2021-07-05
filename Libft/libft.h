@@ -6,7 +6,7 @@
 /*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/05 09:34:22 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/05 18:38:11 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,11 @@
 
 void	*ft_memset(void *s, int c, size_t n);
 void    ft_bzero(void *s, size_t n);
-
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+
+
+
 
 size_t	ft_strlen(const char *ch);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
@@ -37,5 +40,9 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+
+
+void	*ft_calloc(size_t nmemb, size_t size);
+
 
 #endif
