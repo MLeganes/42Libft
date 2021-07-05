@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
+/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/06/30 16:46:14 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/05 09:34:22 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n);
+void    ft_bzero(void *s, size_t n);
 
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 
