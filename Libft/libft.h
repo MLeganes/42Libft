@@ -6,7 +6,7 @@
 /*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/06 23:51:56 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/07 00:24:56 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 
 void	*ft_memset(void *s, int c, size_t n);
 void    ft_bzero(void *s, size_t n);
