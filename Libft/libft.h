@@ -6,7 +6,7 @@
 /*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/07 00:24:56 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/07 01:11:04 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,6 @@ int		ft_tolower(int c);
 
 
 void	*ft_calloc(size_t nmemb, size_t size);
-
+char	*ft_strdup(const char *s);
 
 #endif
