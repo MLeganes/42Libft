@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 15:09:02 by x250              #+#    #+#             */
-/*   Updated: 2021/07/06 15:33:43 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/07 17:31:32 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	ps = (unsigned char *)s;
 	find = (unsigned char)c;
 	count = 0;
-	while (count < n && ps[count] != '\0')
+	while (count < n)
 	{
 		if (ps[count] == find)
 			return ((void *)&ps[count]);
