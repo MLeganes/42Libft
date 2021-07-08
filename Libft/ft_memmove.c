@@ -6,7 +6,7 @@
 /*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/06 01:20:46 by x250              #+#    #+#             */
-/*   Updated: 2021/07/06 15:03:20 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/08 09:26:13 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*pd;
-	unsigned char	*ps;
-	unsigned char	buffer[1000];
 	size_t			count;
 
-	if (dest == 0 || src == 0)
+	if (dest == 0 && src == 0)
 		return (NULL);
-	count = 0;
-	ps = (unsigned char *)src;
-	pd = (unsigned char *)dest;
-	while (count < 1000 && count < n)
+	if (dest > src)
 	{
-		buffer[count] = ps[count];
-		count++;
+		while (n > 0)
+		{
+			((char *)dest)[n - 1] = ((char *)src)[n - 1];
+			n--;
+		}
 	}
-	count = 0;
-	while (count < n)
+	else
 	{
-		pd[count] = buffer[count];
-		count++;
+		count = 0;
+		while (count < n)
+		{
+			((char *)dest)[count] = ((char *)src)[count];
+			count++;
+		}
 	}
 	return (dest);
 }
