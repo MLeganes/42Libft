@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:18:31 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/08 09:34:11 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/09 20:53:41 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strdup(const char *s);
 
 //####### PART 2 ##########
 char *ft_substr(char const *s, unsigned int start,size_t len);
-void *ft_calloc(size_t nmemb, size_t size);
+char *ft_strjoin(char const *s1, char const *s2);
 
 
 #endif
