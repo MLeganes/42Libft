@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/10 12:33:22 by x250              #+#    #+#             */
-/*   Updated: 2021/07/12 11:15:07 by x250             ###   ########.fr       */
+/*   Created: 2021/07/13 11:57:56 by amorcill          #+#    #+#             */
+/*   Updated: 2021/07/13 16:39:52 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,24 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	void	*ret;
 
+	if (s1 == 0)
+		return (0);
+	if (ft_strlen(s1) == 0)
+		return ("");
 	ret = malloc(ft_strlen(s1));
-	if (!ret)
-		return (NULL);
+	if (ret == 0)
+		return (0);
 	start = 0;
-	while (ft_strchr(set, s1[start]))
+	end = ft_strlen(s1) - 1;
+	while (ft_strchr(set, s1[start]) && start <= end)
 		start++;
-	end = ft_strlen(s1);
-	while (ft_strchr(set, s1[end]))
+	if (s1[start] == '\0')
+		return ("");
+	while (ft_strchr(set, s1[end]) && end != 0)
 		end--;
 	end++;
 	ret = ft_substr(s1, (unsigned int)start, (end - start));
+	if (!ret)
+		return (NULL);
 	return ((char *)ret);
 }
