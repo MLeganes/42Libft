@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 09:37:02 by x250              #+#    #+#             */
-/*   Updated: 2021/07/13 11:25:40 by amorcill         ###   ########.fr       */
+/*   Created: 2021/07/13 16:59:57 by amorcill          #+#    #+#             */
+/*   Updated: 2021/07/13 17:00:31 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
