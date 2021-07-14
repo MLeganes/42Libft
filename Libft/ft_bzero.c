@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/05 09:32:55 by x250              #+#    #+#             */
-/*   Updated: 2021/07/05 12:14:20 by x250             ###   ########.fr       */
+/*   Updated: 2021/07/14 16:31:20 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *s, size_t n)
 
 	count = 0;
 	str = (unsigned char *)s;
-	while (count < n && str[count] != '\0')
+	while (count < n)
 	{
 		str[count] = '\0';
 		count++;
