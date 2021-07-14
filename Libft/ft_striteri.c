@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 16:59:57 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/13 17:00:31 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/14 19:25:34 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
+	if (s == 0)
+		return;
+	if (f == 0)
+		return;
 	i = 0;
 	while (s[i] != '\0')
 	{
