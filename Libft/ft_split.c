@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 11:23:56 by x250              #+#    #+#             */
-/*   Updated: 2021/07/14 15:43:04 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/14 20:04:19 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,7 @@ static int	ft_countwords(const char *str, char c)
 
 // static char *ft_takeworkd( char *s, char c, int *len, int slen)
 // {
-// 	char *start;
-	
+// 	char *start;	
 // 	start = s;
 // 	s = ft_strchr(start, c);
 // 	if (s == 0)
@@ -48,7 +47,6 @@ static int	ft_countwords(const char *str, char c)
 // 	*len = (*len) + s - start;
 // 	return (ft_substr(start, 0, s - start));	
 // }
-
 
 static void	ft_findworkds(char **result, char *s, char c)
 {
@@ -70,12 +68,10 @@ static void	ft_findworkds(char **result, char *s, char c)
 		}
 		else if (*s != c)
 		{
-			//result[counter++] = ft_takeworkd((char *)s, c, &len, slen);
-			
 			start = (char *)s;
 			s = ft_strchr(start, c);
 			if (s == 0)
-					s = start + (slen - len);
+				s = start + (slen - len);
 			len += s - start;
 			result[counter++] = ft_substr(start, 0, s - start);
 		}
