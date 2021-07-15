@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 11:23:56 by x250              #+#    #+#             */
-/*   Updated: 2021/07/14 20:04:19 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/15 13:25:25 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,28 +37,15 @@ static int	ft_countwords(const char *str, char c)
 	return (words);
 }
 
-// static char *ft_takeworkd( char *s, char c, int *len, int slen)
-// {
-// 	char *start;	
-// 	start = s;
-// 	s = ft_strchr(start, c);
-// 	if (s == 0)
-// 		s = start + (slen - (*len));
-// 	*len = (*len) + s - start;
-// 	return (ft_substr(start, 0, s - start));	
-// }
-
-static void	ft_findworkds(char **result, char *s, char c)
+static void	ft_findwords(char **result, char *s, char c, int slen)
 {
 	char	*start;
 	int		counter;
 	int		len;
-	int		slen;
 
 	start = (char *)s;
 	counter = 0;
 	len = 0;
-	slen = ft_strlen(s);
 	while (len < slen)
 	{
 		if (*s == c)
@@ -85,10 +72,12 @@ char	**ft_split(char const *s, char c)
 	int		words;
 	char	*set;
 	char	*copy;
+	int		slen;
 
-	set = &c;
 	if (s == 0)
 		return (0);
+	set = &c;
+	slen = ft_strlen(s);
 	words = ft_countwords(s, c);
 	result = malloc(sizeof(char *) * (words + 1));
 	if (result == 0)
@@ -100,6 +89,6 @@ char	**ft_split(char const *s, char c)
 		return (result);
 	}
 	copy = (char *)s;
-	ft_findworkds(result, copy, c);
+	ft_findwords(result, copy, c, slen);
 	return (result);
 }
