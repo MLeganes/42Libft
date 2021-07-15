@@ -6,7 +6,7 @@
 #    By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 12:57:35 by amorcill          #+#    #+#              #
-#    Updated: 2021/07/15 15:16:33 by amorcill         ###   ########.fr        #
+#    Updated: 2021/07/15 18:48:02 by amorcill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,8 @@ SRCS = 	ft_atoi.c		ft_isalnum.c    ft_isdigit.c    ft_lstnew.c     ft_memcmp.c  
 		ft_isascii.c    ft_itoa.c       ft_memchr.c     ft_memmove.c    ft_putendl_fd.c ft_split.c \
 		ft_striteri.c   ft_strlcpy.c    ft_strncmp.c    ft_strtrim.c    ft_toupper.c \
 
-BONUS = ft_lstadd_back.c	ft_lstmap.c		ft_lstadd_front.c	ft_lstnew.c		ft_lstclear.c \
-		ft_lstsize.c		ft_lstlast.c	ft_lstdelone.c		ft_lstiter.c \
+BONUS = ft_lstnew.c		ft_lstadd_front.c	ft_lstsize.c \
+		ft_lstlast.c	 ft_lstadd_back.c	ft_lstdelone.c	ft_lstclear.c	ft_lstiter.c	ft_lstmap.c\
 
 all: $(NAME) bonus
 
