@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 09:28:15 by x250              #+#    #+#             */
-/*   Updated: 2021/07/14 19:24:15 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/15 12:08:16 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	i = 0;
-	if ( s == 0)
+	if (s == 0)
 		return (0);
-	if ( f == 0)
+	if (f == 0)
 		return (0);
 	str = (char *)malloc(ft_strlen(s) + 1);
 	if (str == NULL)
