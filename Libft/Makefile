@@ -6,23 +6,29 @@
 #    By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/23 12:57:35 by amorcill          #+#    #+#              #
-#    Updated: 2021/06/25 09:20:22 by amorcill         ###   ########.fr        #
+#    Updated: 2021/07/15 15:16:33 by amorcill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# IMPORTANT: Execute "$make all" in the same folder /Libft, in the other case, you get an error.
-
 NAME = libft.a
 
-# compile with the flags and include the header .h with -c
-CFLAG = -Wall -Werror -Wextra -c
+CFLAGS = -Wall -Werror -Wextra
 
-all: $(NAME)
+SRCS = 	ft_atoi.c		ft_isalnum.c    ft_isdigit.c    ft_lstnew.c     ft_memcmp.c     ft_memset.c \
+		ft_putnbr_fd.c  ft_strchr.c     ft_strjoin.c    ft_strlen.c     ft_strnstr.c    ft_substr.c \
+		ft_bzero.c      ft_isalpha.c    ft_isprint.c    ft_memcpy.c     ft_putchar_fd.c ft_putstr_fd.c \
+		ft_strdup.c     ft_strlcat.c    ft_strmapi.c    ft_strrchr.c    ft_tolower.c	ft_calloc.c \
+		ft_isascii.c    ft_itoa.c       ft_memchr.c     ft_memmove.c    ft_putendl_fd.c ft_split.c \
+		ft_striteri.c   ft_strlcpy.c    ft_strncmp.c    ft_strtrim.c    ft_toupper.c \
+
+BONUS = ft_lstadd_back.c	ft_lstmap.c		ft_lstadd_front.c	ft_lstnew.c		ft_lstclear.c \
+		ft_lstsize.c		ft_lstlast.c	ft_lstdelone.c		ft_lstiter.c \
+
+all: $(NAME) bonus
 
 $(NAME):
-	gcc $(CFLAG) ft_*.c
+	gcc $(CFLAGS) -c $(SRCS)
 	ar -crs $(NAME) *.o
-	ar -t $(NAME)
 
 clean:
 	rm -f *.o
@@ -31,3 +37,7 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean $(NAME)
+
+bonus: 
+	gcc $(CFLAGS) -c $(BONUS) 
+	ar -crs $(NAME) *.o
