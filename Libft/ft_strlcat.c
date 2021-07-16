@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
+/*   By: x250 <x250@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/24 16:25:43 by x250              #+#    #+#             */
-/*   Updated: 2021/07/02 18:41:52 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/16 22:08:43 by x250             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t buffer)
 {
 	size_t	counter;
 	size_t	s;
-	size_t	d;	
+	size_t	d;
 
 	d = ft_strlen(dst);
 	s = ft_strlen(src);
