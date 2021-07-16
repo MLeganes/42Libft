@@ -6,7 +6,7 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 18:22:30 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/15 18:42:29 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/16 10:36:47 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	while (lst != NULL)
 	{
 		f(lst->content);
-		lst = lst->next;		
+		lst = lst->next;
 	}
 }

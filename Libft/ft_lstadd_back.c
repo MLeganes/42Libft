@@ -6,20 +6,20 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 16:21:33 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/15 17:24:14 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/07/16 10:34:14 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *last;
-	
-	if ( *lst == NULL)
+	t_list	*last;
+
+	if (*lst == NULL)
 	{
 		*lst = new;
-		return ;		
+		return ;
 	}
 	last = ft_lstlast(*lst);
 	last->next = new;
