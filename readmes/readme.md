@@ -1,4 +1,13 @@
 
+
+
+https://github.com/Tripouille/printfTester
+
+https://github.com/ska42/libft-war-machine
+
+https://github.com/alelievr/printf-unit-test
+
+
 -------------------------------------------------------------------------------------
 |                                   (1) RUN MAKE (my programman)                     |
 -------------------------------------------------------------------------------------- 
