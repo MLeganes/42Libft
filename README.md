@@ -6,19 +6,13 @@ To use the  main.c in the project.
 	
 	gcc -Wall -Werror -Wextra 
 
-
 # Sources
 - man 
-- man 
-- man 
+- http://www.cplusplus.com/reference/clibrary/
 - https://www.tutorialspoint.com/cprogramming/c_file_io.htmy
 
 # Testers
 Tester used to check the project.
-- url
-- url
-
-# Notes
-- After r
-
-
+- https://github.com/alelievr/libft-unit-test
+- https://github.com/ska42/libft-war-machine
+- https://github.com/Tripouille/libftTeste
