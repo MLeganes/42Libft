@@ -19,12 +19,15 @@ Tester used to check the project.
 
 # Norma
 Check the norma in the code
+
 	norminette -R CheckForbiddenSourceHeader <FileNameToCheck>
 
 # Run
 Run "make all", be located in the /Libft folder. Check make file for more.
+
 	make all
 
 
 Run the bash War-machine. Check readme from War-machine for more info.
+
 	./grademe.sh
