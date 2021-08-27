@@ -1,0 +1,9 @@
+.DS_Store
+.vscode/
+Libft/.DS_Store
+Libft/test_strdup.c
+Libft/a.out
+libft-unit-test-master/
+libft-war-machine-master/
+libftTester/
+libft-intra
