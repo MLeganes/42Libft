@@ -15,7 +15,7 @@ To use the  main.c in the project.
 Tester used to check the project.
 - https://github.com/alelievr/libft-unit-test
 - https://github.com/ska42/libft-war-machine
-- https://github.com/Tripouille/libftTeste
+- https://github.com/Tripouille/printfTester
 
 # Norma
 Check the norma in the code
