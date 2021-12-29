@@ -6,13 +6,12 @@
 /*   By: amorcill <amorcill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/20 10:13:27 by amorcill          #+#    #+#             */
-/*   Updated: 2021/07/20 10:14:04 by amorcill         ###   ########.fr       */
+/*   Updated: 2021/12/29 16:45:32 by amorcill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdio.h>
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
